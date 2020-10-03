@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<title>Apni Site</title>
+<link rel="icon" href="title_icon.png" type="image/icon">
+ <head>
+
+	<title>Nav Bar</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container{
+			width: 100%;
+			height: 90px;
+			/*border: 2px solid red;*/
+		}
+		.nav1{
+			width: 100%;
+			height: 40px;
+			background-color: black;
+		}
+		.nav2{
+			width: 100%;
+			height: 50px;
+/*			background-color: aliceblue;*/
+		}
+		li{
+			float: left;
+		}
+		.nav1>ul>li{
+			display: block;
+			/*float: left;*/
+			color: white;
+			font: bold 12px/30px serif;
+			padding-left: 15px;
+			padding-top: 6px;
+            overflow: hidden;
+            font-family:verdana;
+        }
+	
+		.right2{
+			list-style-type: none;
+			display: inline-block;
+			float: right;
+			padding-right: 35px;
+			padding-top: 18px;
+			color: Teal;
+			letter-spacing: 1px;
+			cursor: pointer;
+            font-size: 12px;
+            font-family: verdana;
+		}
+		.right{
+			float: right;
+			padding-right: 10px;
+		}
+		.img{
+			padding: 10px;
+			margin-left: 68px;
+			display: inline-block;
+			float: left;
+		}
+		
+		a{
+			text-decoration: none;
+			color: white;
+		}
+
+		a:hover{
+			color: gold;
+		}
+		i:hover{
+			color: orange;
+		}
+		.dropdown{
+			color: black;
+		}
+		.dropdown_content{
+			   display: none;
+			background-color: #f9f9f9;
+            position: absolute;
+			max-width: 280px;
+			box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		    margin-top: 19px;
+            z-index: 1;
+            
+		}
+		.dropdown_content a{
+			color: black;
+			display: block;
+			padding: 12px 16px;
+			text-decoration: none;
+            font-size: 14px;
+            font-family: "Times New Roman", Times, serif;
+            letter-spacing: 1px;
+            color:brown;
+            
+		}
+		
+		.dropdown:hover .dropdown_content{
+			display: block;
+           
+		}
+		.back_img{
+			width: 100%;
+			height: 400px;
+			/*border: 1px solid blue;*/
+			background-image: url(images/header_img.jpg);
+			background-size: 100%;
+			
+		}
+		.back_div{
+			width: 50%;
+			height: auto;
+			display:block;
+		}
+		#img_content{
+			padding-top: 60px;
+			color: white;
+			font-size: 28px; 
+			padding-left: 60px;
+			font-family:sans-serif;
+			/*border: 1px solid black;*/
+		}
+		.icons{
+			width: 50%;
+			height: auto;
+			/*border:1px solid blue;*/
+		}
+		.icon{
+			color:white;
+			display: inline-block;
+			border:1px solid white;
+			padding: 10px;
+			margin-left: 65px;
+			margin-top: 35px;
+			border-radius: 50%;
+		}
+		.button{
+			display: inline-block;
+			border: 1px solid white;
+			margin-left: 70px;
+			margin-top: 30px;
+			padding: 18px 22px;	
+			color: white;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		.button:hover{
+			background-color: white;
+			color: black;
+		}
+		.social_icons{
+			position: fixed;
+			right: 0;
+			top: 20;
+			background-color:  #ffa333;
+		}
+		.yellow_icon{
+			display: block;
+			padding: 8px;
+			color: black;
+		}
+		.yellow_icon:hover{
+			color: black;
+		}
+		.hired{
+			width: 90%;
+			height: auto;
+			margin-top: 100px;	
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.companies{
+			margin-top: 40px;
+			height: auto;
+		}
+		.ml{
+			width: 90%;
+			height: auto;
+			margin-top: 50px;
+			display: inline-block;
+			/*border: 1px solid red;*/
+		}
+		.ml_content{
+			width: 90%;
+			height: auto;
+			margin-top: 40px;
+			display:block;
+		}
+		.ml_1{
+			width: 500px;
+			height: auto;
+			border: 1px solid lightblue;
+			float: right;
+			margin-right:60px;
+			margin-top: 10px; 
+			text-align: justify;
+			border-radius: 6px;
+			padding-right: 16px;
+			padding-left: 20px;
+			font-family: sans-serif;
+			font-size: 15px;
+			line-height: 20px;
+			color: gray;
+		}
+		.ml_partners{
+			width: 100%;
+			height: 380px;
+			margin-top: 80px;
+			background-color: #e7f5fe;
+			/*display: block;*/
+		}
+		.partners_div{
+			width: 80%;
+			height: 220px;
+			/*border: 1px solid blue;*/
+
+		}
+		.employers{
+			width: 90%;
+			height: 610px;
+			margin-top: 50px;
+			/*border: 1px solid blue;*/
+			display: inline-block;
+		}
+		.seshadri{
+			width: 320px;
+			height: 380px;
+			/*border: 1px solid red;*/
+			margin-top: 100px;
+			float: left;
+		}
+		.employers_img{
+			float: left;
+			border-radius: 50%;
+			display: block;
+
+		}
+		.team{
+			width: 100%;
+			height: 470px;
+			background-color: lightblue;
+			background-image: linear-gradient(90deg, #4d4dff, lightblue); 
+		}
+		.CO-FOUNDER{
+			width: 170px;
+			height: 230px;
+			background-color: white;
+			/*border:1px solid white;*/
+			float: left;
+			margin-top: 70px;
+			border-radius: 8px;
+		}
+		.advisors{
+			width: 100%;
+			height: 580px;
+
+		}
+		.adv{
+			width: 270px;
+			height: 300px;
+			/*background-color: white;*/
+			/*border:1px solid blue;*/
+			float: left;
+			margin-top: 70px;
+			border-radius: 8px;
+			box-shadow: 2px 2px 5px 2px lightblue;
+		}
+		.footer{
+			width: 100%;
+			height: 300px;
+			background-color: lightblue;
+			background-image: linear-gradient(90deg, lightblue, #4d4dff); 
+		
+		}
+		.footer_content{
+			width: 90%;
+			height: 200px;
+			/*border:1px solid red;*/
+			padding-top: 60px;
+		}
+		.footer_1{
+			width: 300px;
+			height: 180px;
+			/*border: 1px solid blue;*/
+			float: left;
+			margin-left: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="nav1">
+			<ul>
+				<li style="margin-left: 65px; cursor: pointer;"><a href="https://www.appliedaicourse.com/contact">Have any question ?</a></li>
+				<li><a href="#">&nbsp;&nbsp;<i class="fa fa-phone" style="color: white"></i></a><a href="https://www.appliedaicourse.com/contact">&nbsp;+91 8106-920-029</a></li>
+				<li><a href="#"><i class="fa fa-whatsapp"></i></a><a href="https://www.appliedaicourse.com/contact">&nbsp;+91 6301-939-583</a></li>
+				<li><a href="#"><i class="fa fa-envelope-o"></i></a>&nbsp;&nbsp;<a href="#">team@appliedaicourse.com</a></li>
+				<li><a href="https://www.appliedaicourse.com/login"><i class="fa fa-video-camera"></i></a><a href="#">&nbsp;&nbsp;Live Sessions</a></li>
+				<li class="right" style="padding-right: 60px;"><a href="https://www.appliedaicourse.com/login">Login</a></li>
+				<li class="right"><a href="https://www.appliedaicourse.com/register">Register</a></li>	
+			</ul>
+		</div>
+		<div class="container-nav">
+			<div class="nav2">
+			<div class="imgdiv">
+				<img src="images/ai-logo-new.png" width="100px" height="25px;" class="img">
+			</div>
+			<ul>
+					<div class="dropdown">		
+						<li style="padding-top: 18px;color: Teal;list-style-type: none;padding-left: 38px;cursor: pointer;font-family: verdana;letter-spacing: 1px;font-size:13px;"><i class="fa fa-th" aria-hidden="true" style="cursor: pointer;"></i>&nbsp;COURSES&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i><!-- </li> -->
+						<div class="dropdown_content">
+							<a href="">Applied Machine Learing Course</a>
+							<a href="">GATE CS Blended Course</a>
+							<a href="">Interview Preparetion Course</a>
+							<a href="">AI Workshop</a>
+							<a href="">AI Case Studies</a>
+						</div>
+					</div>
+					 <li class="right2" style="padding-right: 55px;">Contact Us</li>
+					 <div class="dropdown">
+					 	 <li class="right2">For Business&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+					 	 <div class="dropdown_content">
+					 	 	<a>Upskill</a>
+					 	 	<a>Here From Us</a>
+					 	 </div>
+					</div>
+					<li class="right2">Schedule</li>
+					<li class="right2">Success Stories</li> 
+					<div class="dropdown">
+                        <li class="right2">Job Guarantee&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <div class="dropdown_content">
+                            <a>Job Guarantee Terms & Conditions</a>
+                            <a>Incubation Center</a></li> 
+                        </div>
+                    </div>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<div class="back_img">
+	<div class="social_icons">
+		<a href="https://www.youtube.com/channel/UCJINtWke3-FMz2WuEltWDVQ"><i class="fa fa-youtube yellow_icon"></i></a>
+		<a href="https://www.facebook.com/appliedaicourse/"><i class="fa fa-facebook yellow_icon"></i></a>
+		<a href="https://www.linkedin.com/company/applied-ai-course/"><i class="fa fa-linkedin yellow_icon"></i></a>
+	</div>
+	<div class="back_div">
+		<p id="img_content">Applied Machine Learning Course</p><br>
+		<p style="color: white;padding-left: 60px;font-size: 35px; font-family: sans-serif;"><b>The course that gets you HIRED!</b></p>
+	</div>
+	<div class="icons">
+		<a href="https://www.google.co.in/search?q=applied+ai+course+google+reviews&oq=applied+ai+course+google+reviews"><i class="fa fa-google icon"></i><span style="color: white; font-family: sans-serif;padding: 10px;">142+ Reviews</span></a>
+		<a href="https://www.facebook.com/pg/appliedaicourse/reviews/"><i class="fa fa-facebook icon" style="width: 17px; text-align:center;margin-left: 30px;"></i><span style="color: white; font-family: sans-serif;padding: 10px;">92+ Reviews</span></a>
+		<a href="https://www.quora.com/search?q=Applied+AI+Course"><i class="fa fa-quora icon" style="margin-left: 30px;"></i><div style="color: white; font-family: sans-serif;padding: 10px;display: inline-block;">85+ Student Reviews</div></a>
+	</div>
+	<div>
+		<a href="https://www.appliedaicourse.com/course/11/Applied-Machine-learning-course"><p class="button">VIEW COURSES</p></a>
+		<a href="https://www.appliedaicourse.com/course/11/Applied-Machine-learning-course"><p class="button" style="padding: 18px 34px;">ENROLL NOW</p></a>
+	</div>
+</div>
+<div class="hired">
+	<center>
+	<h2 style="font-size: 30px; font-family: verdana; color: #262626;">Our students have been Hired by</h2>
+	<div style="width: 150px;height: auto;px;border-bottom:3px solid lightblue;margin-top: 40px;margin-left: 6px;"></div>
+		<div class="companies">
+			<img src="images/microsoft.png" width="100px">
+			<img src="images/flipkart.jpg" width="100px">
+			<img src="images/qualcomm.png" width="100px">
+			<img src="images/infosys.jpg" width="100px">
+			<img src="images/rauten.png" width="100px">
+			<img src="images/ey.png" width="100px">
+			<img src="images/hcl.jpg" width="100px">
+			<img src="images/spi-global.jpg" width="100px">
+			<img src="images/visa.png" width="100px">
+			<img src="images/jio.jpg" width="100px">
+			<img src="images/embibe.jpg" width="100px">
+			<img src="images/samsung.png" width="100px">
+			<img src="images/zoho.png" width="100px">
+			<img src="images/ab.png" width="100px">
+			<img src="images/spglobal.png" width="100px">
+			<img src="images/intel.jpg" width="100px">
+			<img src="images/fidelity.png" width="100px">
+			<img src="images/ge.png" width="100px">
+			<img src="images/teradata.png" width="100px">
+			<img src="images/redhat.png" width="100px">
+			<img src="images/sbi-bits.png" width="100px">
+			<img src="images/tata.png" width="100px">
+			<img src="images/accenture.png" width="100px">
+		</div>
+	</center>
+</div>
+<center>
+<div class="ml">
+	<h2 style="font-size: 30px; font-family: verdana; color: #262626;">What is Applied AI/Machine Learning Course?</h2>
+	<div style="width: 150px;height: auto;px;border-bottom:3px solid lightblue;margin-top: 40px;margin-left: 6px;"></div>
+	<div class="ml_content">
+		<img src="images/what-is-applied-ai.jpg" width="500px" height="350px" style="border-radius: 5px;float: left;box-shadow: 1px 1px 6px 6px lightgray;margin-top: 10px;">
+	</div>
+	<div>
+		<div class="ml_1">
+			<p style="padding: 10px; border-bottom: 1px solid lightblue;">No Pre-requisites</p>
+			<p style="padding: 10px;">All the concepts discussed have been intuited from a fundamental level to an advanced level with practical implementation at every stage of the course allowing every course participant to master the skills irrespective of the background they come from.</p>
+		</div>
+		<div class="ml_1">
+			<a href="#"><p style="padding: 10px;color: gray;">Applied AI/Machine Learning Course Content</p></a>
+		</div>
+		<div class="ml_1">
+			<a href="#"><p style="padding: 10px;color: gray;">Applied nature of the content</p></a>
+		</div>
+		<div class="ml_1">
+			<a href="#"><p style="padding: 10px;color: gray;">Query Resolution</p></a>
+		</div>
+		<div class="ml_1">
+			<a href="#"><p style="padding: 10px;color: gray;">One-on-One Mentorship</p></a>
+		</div>
+	</div>
+</div>
+<div class="ml_partners">
+	<h2 style="font-size: 35px; font-family: sans-serif; color: #262626;padding: 60px;">Case Studies in Machine Learning Course?</h2>
+	<div style="width: 150px;height: auto;px;border-bottom:3px solid lightblue;margin-top:-20px;margin-left: 6px;"></div><br><br>		
+	<div  class="partners_div">
+			<img src="images/Quora-cd.png" width="110px" height="60px;">
+			<img src="images/Netflix-cd.png" width="130px" height="60px;" style="margin-left:150px;">
+			<img src="images/Amazon-cd.png" width="130px" height="60px;" style="margin-left:150px;">
+			<img src="images/Stackoverflow-cd.png" width="130px" height="60px;" style="margin-left:150px;">
+			<div style="width: 100%;height: auto; margin-top: 60px;">
+			<img src="images/facebook-cd.png" width="130px" height="60px;">
+			<img src="images/NycYTaxi-cd.png" width="130px" height="60px;" style="margin-left:150px;">
+			<img src="images/Cancer-cd.png" width="130px" height="60px;" style="margin-left:150px;">
+			<img src="images/Build_autonomus_Car.png" width="130px" height="60px;" style="margin-left:150px;">
+		</div>
+	</div>
+</div>
+<div class="ml">
+	<div class="ml_content">
+		<img src="images/job_guarantee_img.jpg" width="570px" height="400px" style="border-radius: 5px;float: left;box-shadow: 1px 1px 6px 6px lightgray;margin-top: 10px;margin-left: -10px;">
+	</div>
+	<div class="ml_1" style="margin-right: -10px;border:none;">
+		<h2 style="font-size: 35px;margin-top: 20px;color:#262626 ">Job Guarantee</h2><br>
+		<div style="width: 150px;height: auto;px;border-bottom:3px solid lightblue;margin: 10px;margin-left: 6px;"></div>
+		<p style="padding: 10px; font-size: 20px; color:#00b3b3;line-height: 30px;">We know how challenging changing careers can be. Our Applied AI/Machine Learning Courses are designed as whole learning experiences to support your journey from the first exercise to a new career. We back it with a job guarantee for your peace of mind.</p><br><br>
+		<a href="#" style="margin-left:10px; margin-top:200px;color: black; font-size: 14px;font-weight: 600;">KNOW MORE
+		&nbsp;	<i class="fa fa-arrow-right" ></i></a>
+	
+	</div>
+<div>
+
+	<div class="employers">
+		<h2 style="font-size: 35px;margin-top: 20px;color: #262626; font-family: sans-serif;">Our Employers Speak For US</h2>
+		<div style="width: 150px;height: auto;px;border-bottom:3px solid lightblue;margin-top:50px;margin-left: 6px;"></div>
+		<div class="seshadri">
+			<img src="images/Seshadri.jpg" width="80" height="80" class="employers_img">
+			<p style="font-size: 20px; font-family: sans-serif; text-align: left;clear: left; padding-top: 20px;">Seshadri</p>
+			<p style="font-size: 19px; color:#00b3b3;float: left;padding-top: 13px;">AI Consultant, AB innovative</p>
+			<p style="font-size: 19px; color:#00b3b3;float: left;padding-top: 20px;text-align: left;">Applied AI/Machine Learning Course students continue to surprise me with their grasp of cutting edge AI techniques coupled with effective data engineering skills making their place in data science teams pleasantly unique </p>
+		</div>
+		<div class="seshadri" style="margin-left: 60px;">
+			<img src="images/Heena.jpg" width="80" height="80" class="employers_img">
+			<p style="font-size: 20px; font-family: sans-serif; text-align: left;clear: left; padding-top: 20px;">Seshadri</p>
+			<p style="font-size: 19px; color:#00b3b3;float: left;padding-top: 13px;">Senior Director, Data Science</p>
+			<p style="font-size: 19px; color:#00b3b3;float: left;padding-top: 20px;text-align: left;">I have been very impressed with the customer centricity of Applied AI team, how deeply engaged they were with us as we were working on the citizen data science program for Applied AI/Machine Learning upskilling of our engineering workforce at CA Technologies.  </p>
+		</div>
+		<div class="seshadri" style="margin-left: 65px;">
+			<img src="images/srinivas.jpg" width="80" height="80" class="employers_img">
+			<p style="font-size: 20px; font-family: sans-serif; text-align: left;clear: left; padding-top: 20px;">Seshadri</p>
+			<p style="font-size: 19px; color:#00b3b3;float: left;padding-top: 13px;">Director, Bizzflo India Pvt Limited</p>
+			<p style="font-size: 17px; color:#00b3b3;float: left;padding-top: 20px;text-align: left;font-weight: lighter;font-family: verdana;">Its pleasure to recruiting interns from Applied AI/Machine Learning Course. We are glad that we made the right choice and are looking forward for a couple of more trainees to join and support us. </p>
+		</div>
+		</div>
+	</div>
+</center>
+	<div class="team">
+		<center>
+		<h2 style="font-size: 35px;padding-top: 60px;color: white; font-family: sans-serif;">Our Team</h2>
+		<div style="width: 100px;height: auto;px;border-bottom:3px solid lightblue;margin-top:40px;margin-left: 6px;"></div>
+	
+	<div style="width: 90%;">
+		<div class="CO-FOUNDER">
+			<img src="images/srikanth-varma.jpg" width="120" height="120" style="margin-top: 18px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 15px;color: DarkCyan ;">Shrikant Verma</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 13px;">CO-FOUNDER</p>
+		</div>
+		<div class="CO-FOUNDER" style="margin-left: 39px;">
+			<img src="images/murali-krishna.jpg" width="120" height="120" style="margin-top: 18px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 15px;color: DarkCyan ;">Shrikant Verma</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 13px;">CO-FOUNDER</p>
+		</div>
+		<div class="CO-FOUNDER" style="margin-left: 39px;">
+			<img src="images/naveen-bade.jpg" width="120" height="120" style="margin-top: 18px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 15px;color: DarkCyan ;">Shrikant Verma</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 13px;">CO-FOUNDER</p>
+		</div>
+		<div class="CO-FOUNDER" style="margin-left: 39px;">
+			<img src="images/brahma-reddy.jpg" width="120" height="120" style="margin-top: 18px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 15px;color: DarkCyan ;">Shrikant Verma</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 13px;">CO-FOUNDER</p>
+		</div>
+		<div class="CO-FOUNDER" style="margin-left: 39px;">
+			<img src="images/srinivas-reddy.jpg" width="120" height="120" style="margin-top: 18px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 15px;color: DarkCyan ;">Shrikant Verma</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 13px;">CO-FOUNDER</p>
+		</div>
+		<div class="CO-FOUNDER" style="margin-left: 38px;">
+			<img src="images/satish-atcha.jpg" width="120" height="120" style="margin-top: 18px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 15px;color: DarkCyan ;">Shrikant Verma</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 13px;">CO-FOUNDER</p>
+		</div>
+			
+	</div>
+	</div>
+</center>
+<div class="advisors">
+		<center>
+		<h2 style="font-size: 35px;padding-top: 60px;color: #262626;font-family: sans-serif;">Our Advisors</h2>
+		<div style="width: 100px;height: auto;px;border-bottom:3px solid lightblue;margin-top:40px;margin-left: 6px;"></div>
+	
+	<div style="width: 90%;">
+		<div class="adv">
+			<img src="images/khaleel-1.jpg" width="120" height="120" style="margin-top: 50px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 25px;color: DarkCyan ;">Dr. Khaleel Ur Rahman</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 20px;">ACE ACADEMY</p>
+		</div>
+		<div class="adv" style="margin-left: 40px;">
+			<img src="images/chaitanya.jpg" width="120" height="120" style="margin-top: 50px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 25px;color: DarkCyan ;">Chaitanya Nittala</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 20px;">MICROSOFT</p>
+		</div>
+		<div class="adv" style="margin-left: 40px;">
+			<img src="images/sathish.jpg" width="120" height="120" style="margin-top: 50px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 25px;color: DarkCyan ;">Sathish Reddy</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 20px;">Senior Research Engineer,SAMSUNG</p>
+		</div>
+		<div class="adv" style="margin-left: 40px;">
+			<img src="images/saiISB-200x200.jpg" width="120" height="120" style="margin-top: 50px; border-radius: 50%;">
+			<b><p style="font-size: 19px; font-family: sans-serif; padding-top: 25px;color: DarkCyan ;">Sai Krishna Balivada</p></b>
+			<p style="font-size: 17px; color:#00b3b3;font-family:sans-serif;padding-top: 20px;">Senior Category Manager,AMAZON</p>
+		</div>
+	</div>
+</center>
+</div>
+	<div class="footer">
+		<center>
+			<div class="footer_content">
+				<div class="footer_logo">
+				<img src="images/ai-logo-white.png" width="120px" height="45px" style="float: left;">
+				</div>
+				<div class="footer_1">
+					<p style="color: white;font-size: 22px; font-family: sans-serif; text-align: left;">Our Courses</p><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">Applied Machine Learning Course</a><br><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">AI/Machine Learning Case Studies</a><br><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">AI Workshop</a>
+				</div>
+				<div class="footer_1" style="margin-left: 20px;width: 250px;">
+					<p style="color: white;font-size: 22px; font-family: sans-serif; text-align: left;">Contact us</p><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">+91 8106-920-029</a><br><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">+91 6301-939-583</a><br><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">(whatsapp business)</a>
+				</div>
+				<div class="footer_1" style="width: 200px; float: left;margin-left:0;" >
+					<p style="color: white;font-size: 22px; font-family: sans-serif; text-align: left;">More</p><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">Success stories</a><br><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">Job Guarantee</a><br><br>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">Incubation Center</a>
+					<a href="#" style="font-family: verdana;font-size: 16px; float: left;">Live Sessions</a>
+
+				</div>
+			</div>
+		</center>
+	</div>
+	<center>
+		<div class="last" style="width: 100%; height:30px;background-color: white;margin-top: 10px;font-size: 12px; font-family: sans-serif;">
+			<p style="color: black;">© 2019- All rights are reserved- AAIC Technologies pvt ltd</p>
+		</div>
+	</center>
+</body>
+</html>  
